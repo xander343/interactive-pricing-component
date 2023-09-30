@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h2>Simple, traffic-based pricing</h2>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <div class="billing">
+      <div class="billing__details">
+        <p> <span class="pageviews">50k</span> PAGEVIEWS</p>
+        <p> <span class="pricing enlarge">$12</span> <span class="charge-rate"> /month</span></p>
+      </div>
+      <div class="billing__slider">
+        <input type="range" min="0" max="100" step="25" value="25" id="slider">
+      </div>
+      <div class="billing__toggle">
+        <p>Monthly billing </p><br>
+        <input type="checkbox" id="billing-rate" class="toggle">
+        <label for="billing-rate"></label><br>
+        <p>Yearly billing</p>
+        <p><span class="discount">&nbsp;&nbsp;25% discount&nbsp;&nbsp;</span></p>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="cta__one">
+        <ul>
+          <li>
+            <p>Unlimited websites</p>
+          </li>
+          <li>
+            <p>100% data ownership</p>
+          </li>
+          <li>
+            <p>Email reports</p>
+          </li>
+        </ul>
+      </div>
+      <div class="cta__two">
+        <button class="btn">Start my trial</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
